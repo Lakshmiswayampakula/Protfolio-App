@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
-    "@react-three/drei": "^10.0.6",
-    "@react-three/fiber": "^9.1.2",
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.16",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "framer-motion": "^12.7.3",
