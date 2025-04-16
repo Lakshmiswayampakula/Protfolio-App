@@ -1,9 +1,9 @@
 import pro1 from "../assets/images/project5.jpg";
-import pro2 from "../assets/images/Project6.jpg"
+import pro2 from "../assets/images/project6.jpg"
 import pro3 from "../assets/images/project4.png"
 import pro4 from "../assets/images/project3.jpg"
 import pro5 from "../assets/images/project1.jpg"
-import pro6 from "../assets/images/project2.jpg"
+import pro6 from "../assets/images/Project2.jpg"
 
 export const projects = [
     {
