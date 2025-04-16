@@ -70,8 +70,8 @@ const SkillsPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
-        >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">My Skills</h1>
+        > 
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 pt-12">My Skills</h1>
           <p className="text-xl text-gray-600">A comprehensive overview of my technical expertise</p>
         </motion.div>
 

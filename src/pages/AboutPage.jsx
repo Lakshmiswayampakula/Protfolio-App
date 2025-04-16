@@ -72,34 +72,13 @@ const AboutPage = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button href="/resume.pdf" variant="primary">
+                <Button href="https://lakshmidevi--resume.tiiny.site" variant="primary">
                   Download CV <FaDownload className="ml-2" />
                 </Button>
                 <div className="flex items-center space-x-4">
-                  <a 
-                    href="https://linkedin.com/in/yourusername" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <FaLinkedin size={24} />
-                  </a>
-                  <a 
-                    href="https://github.com/yourusername" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <FaGithub size={24} />
-                  </a>
-                  <a 
-                    href="https://twitter.com/yourusername" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <FaTwitter size={24} />
-                  </a>
+                <FaLinkedin size={24} />
+  <FaGithub size={24} />
+  <FaTwitter size={24} />
                 </div>
               </div>
             </motion.div>
@@ -107,30 +86,39 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </motion.div>
-            ))}
+      {/* Journey So Far Section */}
+<section className="bg-gray-50 py-16">
+  <div className="container">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-800">
+      🚀 My Developer Console
+    </h2>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {[
+        { value: "> dev --mode=fullstack", label: "Frontend, Backend, and Brainpower" },
+        { value: "$ alias me='Tech Explorer'", label: "Lifelong Learner & Builder" },
+        { value: "console.log('Hello, Research')", label: "Research. Innovation. Impact." },
+        { value: "git push origin dreams", label: "Versioning Towards Greatness" },
+      ].map((stat, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.1 }}
+          className="bg-white p-6 rounded-lg shadow text-center"
+        >
+          <div className="text-sm md:text-base font-mono font-bold text-primary mb-2">
+            {stat.value}
           </div>
-        </div>
-      </section>
+          <div className="text-gray-600 text-sm">{stat.label}</div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Journey Section */}
+
+      {/* Journey Section
       <section className="py-16">
         <div className="container">
           <h2 className="section-title">My Journey</h2>
@@ -173,7 +161,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

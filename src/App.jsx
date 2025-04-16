@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import { SoundProvider } from './context/SoundContext';
+import AnimatedBackground from './components/ui/AnimatedBackground';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -16,7 +17,8 @@ function App() {
   return (
     <SoundProvider>
       <Router>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen relative">
+          <AnimatedBackground />
           <Navbar />
           <main className="flex-grow">
             <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>

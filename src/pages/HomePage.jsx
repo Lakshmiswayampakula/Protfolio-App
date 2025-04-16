@@ -35,7 +35,7 @@ const HomePage = () => {
                 <Button to="/projects" size="lg">
                   View Projects <FaArrowRight className="ml-2" />
                 </Button>
-                <Button href="/resume.pdf" variant="secondary" size="lg">
+                <Button href="https://lakshmidevi--resume.tiiny.site" variant="secondary" size="lg">
                   Download Resume <FaDownload className="ml-2" />
                 </Button>
               </div>

@@ -13,10 +13,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Portfolio</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                <span className="text-white font-bold text-xl">LS</span>
+              </div>
+              <h3 className="text-xl font-bold">Lakshmi Swayampakula</h3>
+            </div>
             <p className="text-gray-300 mb-4">
-              A showcase of my skills, projects, and professional journey.
-              Let's connect and create something amazing together.
+              Passionate about crafting innovative digital experiences. 
+              Transforming ideas into reality through code, creativity, and collaboration.
+              Let's build the future together!
             </p>
           </div>
 
@@ -71,7 +77,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
-          <p>© {currentYear} Your Portfolio. All rights reserved.</p>
+          <p>© {currentYear} Lakshmi Swayampakula. All rights reserved.</p>
         </div>
       </div>
     </footer>

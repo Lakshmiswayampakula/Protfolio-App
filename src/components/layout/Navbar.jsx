@@ -46,7 +46,9 @@ const Navbar = () => {
     >
       <div className="container flex justify-between items-center">
         <Link to="/" className="flex items-center" onClick={() => playClickSound()}>
-          <span className="text-2xl font-bold gradient-text">Portfolio</span>
+          <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+            <span className="text-white font-bold text-xl">LS</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
